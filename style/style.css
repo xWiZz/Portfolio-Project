@@ -1,0 +1,199 @@
+body{
+    background-color: #333333;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+div .container-element{
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+div .container-element .content .fp-tableCell{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div .container-element .content h1{
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+div .container-element .content h2{
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+}
+
+div .container-element .content span{
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 50px;
+}
+
+div .container-element .content a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 35px;
+    height: 20px;
+    position: absolute;
+    bottom: 25px;
+    cursor: pointer;
+}
+
+div .container-element .content a::before{
+    content: '';
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    width: 20px;
+    right: -1px;
+    height: 1px;
+    transform: rotate(30deg);
+}
+
+div .container-element .content a::after{
+    content: '';
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    width: 20px;
+    left: -1px;
+    height: 1px;
+    transform: rotate(150deg);
+}
+
+div .container-element .content-secondary .fp-tableCell{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+div .container-element .content-secondary a{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ffffff;
+    transition: background ease-in-out .5s;
+}
+
+div .container-element .content-secondary a:hover{
+    width: 50%;
+    height: 100%;
+    background-color: grey;
+}
+
+div .container-element .content-third .fp-tableCell{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: radial-gradient(ellipse 70% 50% at 30% 50%,#ec5d21,transparent);
+}
+
+div .container-element .content-third div.content-image{
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: calc(100% - 444px);
+}
+
+div .container-element .content-third div.content-image picture {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+div .container-element .content-third div.content-image picture img{
+    position: relative;
+    float: right;
+    width: 827px;
+    height: 495px;
+    transform: perspective(400px) rotateY(15deg);
+}
+
+div .container-element .content-third article{
+    width: 444px;
+    max-width: 650px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div .container-element .content-third article h2{
+    margin: 0;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 36px;
+}
+
+div .container-element .content-third article p{
+    color: #ffffff;
+    font-size: 18px;
+}
+
+div .container-element .content-third article a{
+    border-top: 1px solid #ffffff;
+    width: 100%;
+}
+
+
+
+@media only screen and (min-width: 1440px){
+    div .container-element .content-third div.content-image{
+        width: calc(100% - 520px);
+    }
+    div .container-element .content-third div.content-image picture {
+        right: 0px;
+    }
+    div .container-element .content-third div.content-image picture img{
+        width: 1157.8px;
+        height: 693px;
+    }
+}
+
+@media only screen and (min-width: 1792px){
+    div .container-element .content-third div.content-image{
+        width: calc(100% - 688px);
+    }
+    div .container-element .content-third div.content-image picture {
+        right: 0px;
+    }
+    div .container-element .content-third div.content-image picture img{
+        width: 1654px;
+        height: 990px;
+        left: 25%;
+    }
+}

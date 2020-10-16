@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent Cuvilliez | Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="fullpage">
+        <section class="section container-element">
+            <section class="slide content">
+                <h1>Bienvenue sur</h1>
+                <h2>Mon Portfolio</h2>
+                <span>Faites défiler pour continer</span>
+                <a href="#choice"></a>
+            </section>
+        </section>
+        <section class="section container-element" id="choice">
+            <section class="slide content-secondary">
+                <a href="#dev">Développement</a>
+                <a href="#design">Design</a>
+            </section>
+        </section>
+        <section class="section container-element" id="dev">
+            <section class="slide content-third">
+                <div class="content-image">
+                    <picture>
+                        <img src="img/arche-visu.png" alt="arche-visu-image">
+                    </picture>
+                </div>
+                <article>
+                    <h2>arche</h2>
+                    <p>Le projet arche m’a était confié dans l’entreprise Mazarine. Le projet avait pour but d’effectuer de nouvelles intégrations, de la maintenance d’éléments et de contenus.</p>
+                    <a href="#"></a>
+                </article>
+            </section>
+        </section>
+        <section class="section container-element">
+            <section class="slide content-third">
+                <div class="content-image">
+                    <picture>
+                        <img src="img/arche-visu.png" alt="arche-visu-image">
+                    </picture>
+                </div>
+                <article>
+                    <h2>arche</h2>
+                    <p>Le projet arche m’a était confié dans l’entreprise Mazarine. Le projet avait pour but d’effectuer de nouvelles intégrations, de la maintenance d’éléments et de contenus.</p>
+                    <a href="#"></a>
+                </article>
+            </section>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/fullpage.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#fullpage').fullpage({
+                autoScrolling:true,
+                scrollHorizontally: true,
+                scrollingSpeed: 1400,
+                lazyLoading: true,
+            });
+        });
+    </script>
+</body>
+</html>
