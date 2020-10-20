@@ -119,6 +119,14 @@ div .container-element .content-third .fp-tableCell{
     background: radial-gradient(ellipse 70% 50% at 30% 50%,#ec5d21,transparent);
 }
 
+div .container-element .content-third.maubou .fp-tableCell{
+    background: radial-gradient(ellipse 70% 50% at 30% 50%,#ffffff,transparent);
+}
+
+div .container-element .content-third.wiz .fp-tableCell{
+    background: radial-gradient(ellipse 70% 50% at 30% 50%,#86dea8,transparent);
+}
+
 div .container-element .content-third div.content-image{
     position: absolute;
     height: 100vh;
@@ -169,6 +177,113 @@ div .container-element .content-third article a{
     width: 100%;
 }
 
+/* RIGHT CONTENT */
+
+div .container-element .content-third.right .fp-tableCell{
+    width: 90%;
+    margin-left: 10%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: radial-gradient(ellipse 70% 50% at 70% 50%,#2a688d,transparent);
+}
+
+div .container-element .content-third.gas.right .fp-tableCell{
+    background: radial-gradient(ellipse 70% 50% at 70% 50%,#dfc4a8,transparent);
+}
+
+div .container-element .content-third.drake.right .fp-tableCell{
+    background: radial-gradient(ellipse 70% 50% at 70% 50%,#f260fa,transparent);
+}
+
+div .container-element .content-third.right div.content-image{
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    left: unset;
+    width: calc(100% - 444px);
+}
+
+div .container-element .content-third.right div.content-image picture {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+div .container-element .content-third.right div.content-image picture img{
+    position: relative;
+    float: left;
+    width: 827px;
+    height: 495px;
+    transform: perspective(400px) rotateY(-15deg);
+}
+
+div .container-element .content-third.right article{
+    width: 444px;
+    max-width: 650px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div .container-element .content-third.right article h2{
+    margin: 0;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 36px;
+}
+
+div .container-element .content-third.right article p{
+    color: #ffffff;
+    font-size: 18px;
+}
+
+div .container-element .content-third.right article a{
+    border-top: 1px solid #ffffff;
+    width: 100%;
+}
+
+body #fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: white;
+}
+
+body #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+    width: 5px;
+    height: 5px;
+    margin: -2px 0 0 -2px;
+}
+
+body #fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span {
+    width: 6px;
+    height: 6px;
+    margin: -3px 0 0 -3px;
+}
+
+body #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+    width: 6px;
+    height: 6px;
+    margin: -3px 0 0 -3px;
+}
+
+body #fp-nav ul, .fp-slidesNav ul {
+    background-color: #33333385;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    padding: 5px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+
+
 
 
 @media only screen and (min-width: 1440px){
@@ -179,6 +294,17 @@ div .container-element .content-third article a{
         right: 0px;
     }
     div .container-element .content-third div.content-image picture img{
+        width: 1157.8px;
+        height: 693px;
+    }
+    /* RIGHT CONTENT */
+    div .container-element .content-third.right div.content-image{
+        width: calc(100% - 520px);
+    }
+    div .container-element .content-third.right div.content-image picture {
+        right: 0px;
+    }
+    div .container-element .content-third.right div.content-image picture img{
         width: 1157.8px;
         height: 693px;
     }
@@ -194,6 +320,18 @@ div .container-element .content-third article a{
     div .container-element .content-third div.content-image picture img{
         width: 1654px;
         height: 990px;
-        left: 25%;
+        left: unset;
+    }
+    /* RIGHT CONTENT */
+    div .container-element .content-third.right div.content-image{
+        width: calc(100% - 688px);
+    }
+    div .container-element .content-third.right div.content-image picture {
+        right: 0px;
+    }
+    div .container-element .content-third.right div.content-image picture img{
+        width: 1654px;
+        height: 990px;
+        left: unset;
     }
 }
