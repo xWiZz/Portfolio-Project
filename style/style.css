@@ -100,13 +100,21 @@ div .container-element .content-secondary a{
     text-decoration: none;
     font-size: 36px;
     color: #ffffff;
-    transition: background ease-in-out .5s;
 }
 
 div .container-element .content-secondary a:hover{
     width: 50%;
     height: 100%;
-    background-color: grey;
+    background-image: url('../img/bg-dev.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fadein 1.5s;
+    color: black;
+}
+
+@keyframes fadein{
+    from {opacity: 0;}
+    to   {opacity: 1;}
 }
 
 div .container-element .content-third .fp-tableCell{
@@ -170,6 +178,7 @@ div .container-element .content-third article h2{
 div .container-element .content-third article p{
     color: #ffffff;
     font-size: 18px;
+    text-align: justify;
 }
 
 div .container-element .content-third article a{
@@ -242,12 +251,164 @@ div .container-element .content-third.right article h2{
 div .container-element .content-third.right article p{
     color: #ffffff;
     font-size: 18px;
+    text-align: justify;
 }
 
 div .container-element .content-third.right article a{
     border-top: 1px solid #ffffff;
     width: 100%;
 }
+
+body div .container-element .fp-slides .fp-slidesContainer{
+    transform: unset !important;
+    transition: unset !important;
+}
+
+div .container-element .content-four{
+    width: 90%;
+    height: 100%;
+    max-width: 1440px;
+    margin: auto;
+    float: unset;
+}
+div .container-element .content-four .fp-tableCell{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div .container-element .content-four .fp-tableCell .about-me{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div .container-element .content-four .fp-tableCell .about-me picture{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin-bottom: 25px;
+}
+
+div .container-element .content-four .fp-tableCell .about-me picture img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+div .container-element .content-four .fp-tableCell .about-me article{
+    height: unset;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+div .container-element .content-four .fp-tableCell .about-me article h2{
+    margin: 0;
+    font-weight: 800;
+}
+
+div .container-element .content-four .fp-tableCell .about-me article h3{
+    margin: 0;
+    font-weight: 400;
+}
+
+div .container-element .content-four .fp-tableCell article{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div .container-element .content-four .fp-tableCell article h2{
+    margin: 0;
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+div .container-element .content-four .fp-tableCell article span{
+    margin: 25px 100px;
+    margin-bottom: 0;
+    font-size: 18px;
+    text-align: justify;
+    color: #fff;
+}
+
+div .container-element .content-four .fp-tableCell article section.social-links{ 
+    border-top: 1px solid #fff;
+    margin: 25px 100px;
+    padding: 0 25px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div .container-element .content-four .fp-tableCell article section.social-links li{ 
+    list-style: none;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+div .container-element .content-four .fp-tableCell article section.social-links li a{ 
+    text-decoration: none;
+    color: #fff;
+}
+
+div .container-element .content-four .fp-tableCell article section.social-links li a#git::after{ 
+    content: '';
+    width: 35px;
+    height: 35px;
+    display: block;
+    background-image: url('../img/github.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+div .container-element .content-four .fp-tableCell article section.social-links li a#codepen::after{ 
+    content: '';
+    width: 35px;
+    height: 35px;
+    display: block;
+    background-image: url('../img/codepen.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+div .container-element .content-four .fp-tableCell article section.social-links li a#mail::after{ 
+    content: '';
+    width: 35px;
+    height: 35px;
+    display: block;
+    background-image: url('../img/mail.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div .container-element .content-four .fp-tableCell article section.social-links li a#linkedin::after{ 
+    content: '';
+    width: 35px;
+    height: 35px;
+    display: block;
+    background-image: url('../img/linkedin.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
 
 body #fp-nav ul li a span, .fp-slidesNav ul li a span {
     background: white;
