@@ -183,7 +183,34 @@ div .container-element .content-third article p{
 
 div .container-element .content-third article a{
     border-top: 1px solid #ffffff;
-    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    padding: 18px 0;
+    text-decoration: none;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+}
+
+div .container-element .content-third article a::before{
+    content: '';
+    width: 16px;
+    height: 3px;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    transform: rotate(90deg);
+}
+
+div .container-element .content-third article a::after{
+    content: '';
+    width: 16px;
+    height: 3px;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
 }
 
 /* RIGHT CONTENT */
@@ -256,7 +283,11 @@ div .container-element .content-third.right article p{
 
 div .container-element .content-third.right article a{
     border-top: 1px solid #ffffff;
-    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    padding: 18px 0;
+    text-decoration: none;
+    font-weight: 800;
 }
 
 body div .container-element .fp-slides .fp-slidesContainer{
@@ -496,3 +527,17 @@ body #fp-nav ul, .fp-slidesNav ul {
         left: unset;
     }
 }
+
+
+
+.text, .image{
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.text.not-visible, .image.not-visible{
+    transform: translateY(50px);
+    opacity: 0;
+}
+
