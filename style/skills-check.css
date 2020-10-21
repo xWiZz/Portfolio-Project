@@ -1,0 +1,191 @@
+div .container-element .content-five .fp-tableCell .skills-animation{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+div .container-element .content-five .fp-tableCell .skills-animation picture{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+div .container-element .content-five .fp-tableCell .skills-animation picture img#js-animation{
+    position: absolute;
+    top: 0;
+    -webkit-filter: drop-shadow(1px 1px 10px #e1c427);
+    filter: drop-shadow(1px 1px 10px #e1c427);
+}
+div .container-element .content-five .fp-tableCell .skills-animation picture img#psd-animation{
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    -webkit-filter: drop-shadow(1px 1px 10px #31bde7);
+    filter: drop-shadow(1px 1px 10px #31bde7);
+}
+div .container-element .content-five .fp-tableCell .skills-animation picture img#css-animation{
+    position: absolute;
+    right: 0;
+    top: 25%;
+    -webkit-filter: drop-shadow(1px 1px 10px #1b87c7);
+    filter: drop-shadow(1px 1px 10px #1b87c7);
+}
+div .container-element .content-five .fp-tableCell .skills-animation picture img#shopify-animation{
+    position: absolute;
+    right: 0;
+    bottom: 25%;
+    -webkit-filter: drop-shadow(1px 1px 10px #96bf49);
+    filter: drop-shadow(1px 1px 10px #96bf49);
+}
+div .container-element .content-five .fp-tableCell .skills-animation picture img#pr-animation{
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    -webkit-filter: drop-shadow(1px 1px 10px #db74f2);
+    filter: drop-shadow(1px 1px 10px #db74f2);
+}
+div .container-element .content-five .fp-tableCell .skills-animation picture img#vs-animation{
+    position: absolute;
+    -webkit-filter: drop-shadow(1px 1px 10px #3c99d4);
+    filter: drop-shadow(1px 1px 10px #3c99d4);
+}
+div .container-element .content-five .fp-tableCell .skills-animation picture img#mg-animation{
+    position: absolute;
+    bottom: 0;
+    -webkit-filter: drop-shadow(1px 1px 10px #ec5d21);
+    filter: drop-shadow(1px 1px 10px #ec5d21);
+}
+div .container-element .content-five .fp-tableCell .skills-animation picture img#ai-animation{
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    -webkit-filter: drop-shadow(1px 1px 10px #ff7719);
+    filter: drop-shadow(1px 1px 10px #ff7719);
+}
+div .container-element .content-five .fp-tableCell .skills-animation picture img#github-animation{
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+    -webkit-filter: drop-shadow(1px 1px 10px #934fa6);
+    filter: drop-shadow(1px 1px 10px #934fa6);
+}
+div .container-element .content-five .fp-tableCell .skills-animation picture img#html-animation{
+    position: absolute;
+    left: 0;
+    top: 25%;
+    -webkit-filter: drop-shadow(1px 1px 10px #f16529);
+    filter: drop-shadow(1px 1px 10px #f16529);
+}
+div .container-element .content-five .fp-tableCell .skills-animation picture img#ae-animation{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    -webkit-filter: drop-shadow(1px 1px 10px #ca8fff);
+    filter: drop-shadow(1px 1px 10px #ca8fff);
+}
+
+.animation-top{
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.animation-top-left{
+    transform: translate(0);
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.animation-top-right{
+    transform: translate(0);
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.animation-bottom{
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.animation-bottom-left{
+    transform: translate(0);
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.animation-bottom-right{
+    transform: translate(0);
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.animation-left{
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.animation-right{
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+
+
+.animation-top.not-visible{
+    transform: translateY(-50px);
+    opacity: 0;
+}
+.animation-top-left.not-visible{
+    transform: translate(-150px, -150px);
+    opacity: 0;
+}
+.animation-top-right.not-visible{
+    transform: translate(150px, -150px);
+    opacity: 0;
+}
+.animation-bottom.not-visible{
+    transform: translateY(150px);
+    opacity: 0;
+}
+.animation-bottom-left.not-visible{
+    transform: translate(-150px, 150px);
+    opacity: 0;
+}
+.animation-bottom-right.not-visible{
+    transform: translate(150px, 150px);
+    opacity: 0;
+}
+.animation-left.not-visible{
+    transform: translateX(-150px);
+    opacity: 0;
+}
+.animation-right.not-visible{
+    transform: translateX(150px);
+    opacity: 0;
+}
+
+
+
+div .container-element .content-five .fp-tableCell .skills-text{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div .container-element .content-five .fp-tableCell .skills-text h2{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+div .container-element .content-five .fp-tableCell .skills-text h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 36px;
+}

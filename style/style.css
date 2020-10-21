@@ -438,8 +438,22 @@ div .container-element .content-four .fp-tableCell article section.social-links 
     background-repeat: no-repeat;
 }
 
+div .container-element .content-five{
+    width: 90%;
+    height: 100%;
+    max-width: 1440px;
+    margin: auto;
+    float: unset;
+}
 
-
+div .container-element .content-five .fp-tableCell{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
 body #fp-nav ul li a span, .fp-slidesNav ul li a span {
     background: white;
@@ -468,14 +482,20 @@ body #fp-nav ul, .fp-slidesNav ul {
     width: 20px;
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: 275px;
     padding: 5px 0;
     justify-content: space-between;
     align-items: center;
     border-radius: 20px;
 }
 
-
+div .container-element.footer footer{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    color: #474747;
+}
 
 
 @media only screen and (min-width: 1440px){
