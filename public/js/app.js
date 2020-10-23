@@ -1,6 +1,6 @@
 let observer = new IntersectionObserver(function (observables){
     observables.forEach(function (observable){
-        if (observable.intersectionRatio > 0.75){
+        if (observable.intersectionRatio > 0.50){
             observable.target.classList.remove('not-visible')
             // observer.unobserve(observable.target)
         } else {
@@ -8,7 +8,7 @@ let observer = new IntersectionObserver(function (observables){
         }
     })
 }, {
-    threshold: [0.75]
+    threshold: [0.50]
 
 })
 

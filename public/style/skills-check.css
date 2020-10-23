@@ -3,6 +3,7 @@ div .container-element .content-five .fp-tableCell .skills-animation{
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 div .container-element .content-five .fp-tableCell .skills-animation picture{
