@@ -17,3 +17,5 @@ items.forEach(function (item){
     item.classList.add('not-visible')
     observer.observe(item)
 })
+
+
